@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page{
+    width: 100%;
+    position: relative;
+}
+nav{
+    display: flex;
+    /* border: 1px solid; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+    height: 70px;
+}
+nav .burger{
+    font-size: 30px;
+    display: none;
+}
+.burger #btn{
+  border: none;
+  background-color: white;
+
+}
+nav .mobile-menu{
+    display: none;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    /* background-color: aqua; */
+    justify-content: space-between;
+    font-size: 18px;
+}
+nav ul li a{
+   text-decoration:none;
+   color: black;
+   font-weight: bolder;
+}
+nav #reserve{
+    font-size: 15px;
+    padding: 10px 15px;
+    background-color:#EF5A6F;
+    color: white;
+    border: none;
+}
+.content {
+    position: relative;
+}
+.content video{
+    width: 100%;
+}
+.video h1{
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 5%;
+}
+.video p{
+    font-size: 25px;
+    position: absolute;
+    top: 280px;
+    left: 5%;
+    color: white;
+}
+.video i{
+    font-size: 18px;
+}
+.img img{
+    width: 550px;
+    height: 350px;
+    position: absolute;
+    top: 270px;
+    right: 5%;
+}
+                                  /* Page-1 */
+
+.page-1{
+    width: 100%;
+    position: relative;
+}
+.menu h1{
+    font-size: 60px;
+    position: absolute;
+    top: 50px;
+    left: 35%;
+}
+.items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+    position: relative;
+    top: 160px;
+    padding-left:5% ;
+}
+
+                                    /* page-2 */
+
+ .page-2{
+    width: 100%;
+    position: relative;
+ }  
+ .head{
+   position:relative;
+   top: 190px;
+ }    
+ .pics{
+    position: absolute;
+    top: 360px;
+    left: 7%;
+    display: flex;
+ }  
+ .pics img{
+    width: 570px;
+    height: 400px;
+    padding: 10px;
+ }  
+ .pics .img-1 p{
+    /* border: 1px solid; */
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color:#FF4C4C;
+    position: absolute;
+    bottom: 150px;
+    left: 3%;
+ }   
+ .pics .img-1 h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 70px;
+    left: 3%;
+ }
+ .pics .img-2 p{
+    /* border: 1px solid; */
+    width: 100px;
+    height: 28px;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    background-color:#FF4C4C;
+    position: absolute;
+    bottom: 110px;
+    right: 38%;
+ }   
+ .pics .img-2 h3{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    bottom: 60px;
+    right: 11%;
+ }
+ 
+                               /* gird */
+.lastpic{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   position: relative;
+   top: 800px;
+   padding-left: 6%;
+}
+.lastpic .card p{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+                                 /* page-3 */
+
+.page-3{
+    width: 100%;
+    position: relative;
+}
+.contacts{
+    width: 100%;
+    height: 90vh;
+    /* border: 1px solid; */
+    position: relative;
+    top: 900px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 6%;
+    background-image:url(coffe-6bg.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    background-blend-mode:soft-light;
+    background-position: center;
+    color: white;
+    font-weight: bolder;
+    /* color: white; */
+}
+.contact{
+    /* border: 1px solid; */
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding-top: 90px;
+}
+.title
+{
+  position: absolute;
+  top: 920px;
+  left: 6%;
+  font-weight: bolder;
+  color: white;
+}
+                                 /* hover */
+nav a:hover{
+  color: #FF4C4C;
+  transition: all 0.5s;
+
+}
+
+ 
+                                      /* Tap view */
+@media (max-width:992px)
+{
+  
+    nav .logo h2{
+        font-size: 40px;
+    }
+    nav .mobile-menu{
+        display: block;
+    }
+  nav ul {
+    display: none;
+  }
+
+  .sidebar{
+    display: block;
+    background-color: tan;
+    position: absolute;
+    top: 70px;
+    left: 1px;
+    width: 300px;
+    height: 300px;
+    display: none;
+    transition: all 1s;
+  }
+  .sidebar ul li{
+    text-align: center;
+    padding-top: 20px;
+  }
+  .open.sidebar{
+    display: block;
+  }
+  nav .burger{
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  nav button{
+    font-size: 28px;
+  }
+  .content video{
+    width: 100%;
+    height: 50%;
+}
+  
+  .video h1{
+    font-size: 50px;
+    top: 30px;
+    left: 15%;
+  }
+  .video p{
+    top: 100px;
+    left: 15%;
+  }
+  .img img{
+    width: 430px;
+    height: 220px;
+    top: 180px;
+    left: 15%;
+  }
+
+                       /* page-1 */
+
+   .menu h1{
+    left: 27%;
+   }
+  .items{
+    grid-template-columns: 1fr 1fr;
+  }
+ 
+                           /*page-2  */
+
+ .pics{
+    position: absolute;
+    top: 380px;
+    left: 4.5%;
+    display: flex;
+    flex-direction: column;
+ }     
+ .pics img{
+    width: 700px;
+    height: 450px;
+    padding: 10px;
+ }   
+ .pics .img-1 p{
+  top:250px;
+  left: 5%;
+ }
+ .pics .img-1 h3{
+    top: 290px;
+    left: 5%;
+ }
+ .pics .img-2 p{
+    left: 5%;
+   }
+   .pics .img-2 h3{
+      left: 5%;
+   }
+   .lastpic{
+    flex-direction: column;
+    top: 1330px;
+   }
+   .lastpic{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+   position: relative;
+   top: 1300px;
+   padding-left: 3%;
+}
+
+                                 /* .page-3 */
+
+  .contacts{
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: 1400px;
+    row-gap: 5px;
+    background-image: url(coffe-4bg.webp);
+    height: 50vh;
+  }
+  .contact{
+    margin-top:10% ;
+    width: 300px;
+    height: 200px;
+    padding-top: 30px;
+  }
+  .title
+  {
+    position: absolute;
+    top: 1420px;
+  }
+}
+
+
+                                   /* mobile view */
+@media (max-width:576px)
+{
+    nav .logo h2{
+        font-size: 25px;
+    }
+  nav ul {
+    display: none;
+  }
+  nav .burger{
+    font-size: 30px;
+    font-weight: bold;
+  }
+  nav button{
+    font-size: 18px;
+    padding: 10px 10px;
+  }
+    .content video{
+        width: 100%;
+        height: 50%;
+    }
+    .video h1{
+        font-size: 30px;
+        top: 10px;
+      }
+      .video p{
+        top: 50px;
+        font-size: 15px;
+      }
+      .img img{
+        width: 230px;
+        height: 120px;
+        top: 100px;
+        left: 15%;
+      }
+
+      /* page-1 */
+
+      .menu h1{
+        font-size: 40px;
+        left: 17%;
+      }
+      .items{
+       grid-template-columns: 1fr;
+       padding-left: 10%;
+       }
+      
+                                 /* page-2 */
+
+ 
+ .pics{
+    position: absolute;
+    top: 320px;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+ }     
+ .pics img{
+    width: 362px;
+    height: 300px;
+    padding: 10px;
+    margin-left: 4%;
+ }  
+ .pics .img-1 p{
+    font-size: 18px;
+    top: 180px;
+    left: 12%;
+ } 
+ .pics .img-1 h3{
+    font-size: 20px;
+    top: 210px;
+    left: 12%;
+ } 
+ .pics .img-2 p{
+    font-size: 18px;
+    left: 13%;
+    bottom: 70px;
+ } 
+ .pics .img-2 h3{
+    font-size: 20px;
+    left: 13%;
+    bottom: 40px;
+ } 
+ .lastpic{
+    flex-direction: column;
+    top: 930px;
+ }
+ .lastpic{
+    display: grid;
+    grid-template-columns: 1fr;
+   position: relative;
+   top: 950px;
+   padding-left: 11%;
+   row-gap: 20px;
+}
+
+                               /* .page-3 */
+
+    .contacts{
+    grid-template-columns: 1fr ;
+    position: relative;
+    top: 1100px;
+    row-gap: 5px;
+    background-image: url(coffe-4bg.webp);
+    height: 100vh;
+    padding-left: 13%;
+  }
+  .contact{
+    width: 300px;
+    height: 200px;
+    padding-top: 30px;
+  }
+  .title
+  {
+    position: absolute;
+    top: 1110px;
+    font-size: 20px;
+    color:white;
+  }
+}
+
+@media (max-width:375px)
+{
+  .img img{
+    width: 200px;
+    height: 100px;
+  }
+
+  .items{
+    grid-template-columns: 1fr;
+    padding-left: 7%;
+    }
+    .pics{
+      position: absolute;
+      top: 320px;
+      left: 0%;
+      display: flex;
+      flex-direction: column;
+   }     
+   .pics img{
+      width: 362px;
+      height: 300px;
+      padding: 10px;
+      margin-left: 2%;
+   }  
+   .lastpic{
+    display: grid;
+    grid-template-columns: 1fr;
+   position: relative;
+   top: 950px;
+   padding-left: 7%;
+   row-gap: 20px;
+}
+.contacts{
+  padding-left: 7%;
+}
+}
